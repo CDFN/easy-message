@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group 'io.github.cdfn'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api 'io.lettuce:lettuce-core:6.1.1.RELEASE'
+    api 'org.msgpack:msgpack-core:0.8.22'
+    api 'org.slf4j:slf4j-api:1.7.30'
+}
+
+test {
+    useJUnitPlatform()
+}
